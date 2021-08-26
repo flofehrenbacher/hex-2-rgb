@@ -22,7 +22,7 @@
   "scripts": {
     "test": "jest",
     "prebuild": "rimraf dist",
-    "build": "tsc",
+    "build": "npm run test && tsc",
     "presize": "npm run build",
     "size": "size-limit",
     "prepublishOnly": "npm run build && size-limit"
