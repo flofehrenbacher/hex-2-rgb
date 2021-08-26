@@ -1,0 +1,42 @@
+{
+  "keywords": [
+    "rgb",
+    "rgba",
+    "hex",
+    "alpha",
+    "color",
+    "convert",
+    "typescript"
+  ],
+  "author": "Florian Fehrenbacher",
+  "license": "ISC",
+  "name": "hex-2-rgb",
+  "version": "1.0.0",
+  "description": "lightweight typescript function to convert hexes of format #rrggbb to rgb(x,y,z) or rgba(x,y,z,a)",
+  "main": "dist/index.js",
+  "types": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "presize": "npm run build",
+    "size": "size-limit",
+    "prepublishOnly": "npm run build && size-limit"
+  },
+  "size-limit": [
+    {
+      "limit": "300 B",
+      "path": "dist/index.js"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^5.0.3",
+    "@types/jest": "^27.0.1",
+    "jest": "^27.0.6",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "size-limit": "^5.0.3",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.3.5"
+  }
+}
