@@ -17,15 +17,13 @@
   },
   "version": "1.5.0",
   "description": "lightweight typescript function to convert hexes of format #rrggbb to rgb(x,y,z) or rgba(x,y,z,a)",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "main": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "prebuild": "rimraf dist",
     "build:esm": "esbuild ./src/index.ts --format=esm --outfile=./dist/index.mjs --target=esnext",
-    "build:umd": "tsc",
-    "build": "npm run test && npm run build:umd && npm run build:esm",
+    "build": "npm run test && tsc && npm run build:esm",
     "presize": "npm run build",
     "size": "size-limit",
     "prepublishOnly": "npm run build && size-limit"
