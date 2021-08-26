@@ -4,7 +4,7 @@
  * hex2rgb('#FFFFFF', 0.5)
  */
 export function hex2rgb(
-  hex: `#${string}`,
+  hex: string,
   alpha?: number,
 ): `rgb(${number}, ${number}, ${number})` | `rgba(${number}, ${number}, ${number}, ${number})` {
   const r = parseInt(hex.slice(1, 3), 16)
