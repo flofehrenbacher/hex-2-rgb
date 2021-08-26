@@ -1,4 +1,4 @@
-import { hex2rgb } from '.'
+import { hex2rgb } from './index'
 
 describe('hex2rgb should', () => {
   const whiteHex = '#FFFFFF'
