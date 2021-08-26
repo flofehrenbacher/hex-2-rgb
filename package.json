@@ -18,7 +18,7 @@
   "version": "1.0.0",
   "description": "lightweight typescript function to convert hexes of format #rrggbb to rgb(x,y,z) or rgba(x,y,z,a)",
   "main": "dist/index.js",
-  "types": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "prebuild": "rimraf dist",
