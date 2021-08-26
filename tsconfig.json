@@ -2,8 +2,8 @@
   "compilerOptions": {
     "declaration": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
-    "target": "esnext",
+    "module": "umd",
+    "target": "es5",
     "sourceMap": true,
     "outDir": "dist",
     "skipLibCheck": true,
