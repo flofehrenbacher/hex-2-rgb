@@ -23,7 +23,9 @@
   "scripts": {
     "test": "jest",
     "prebuild": "rimraf dist",
-    "build": "npm run test && tsc && esbuild ./src/index.ts --format=esm --outfile=./dist/index.mjs",
+    "build:esm": "esbuild ./src/index.ts --format=esm --outfile=./dist/index.mjs --target=esnext",
+    "build:umd": "tsc",
+    "build": "npm run test && npm run build:umd && npm run build:esm",
     "presize": "npm run build",
     "size": "size-limit",
     "prepublishOnly": "npm run build && size-limit"
