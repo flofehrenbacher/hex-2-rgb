@@ -1,3 +1,8 @@
+/**
+ * @example
+ * hex2rgb('#000000')
+ * hex2rgb('#FFFFFF', 0.5)
+ */
 export function hex2rgb(
   hex: `#${string}`,
   alpha?: number,
