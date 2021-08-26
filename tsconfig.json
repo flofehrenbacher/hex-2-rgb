@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "module": "umd",
-    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
     "target": "es5",
+    "sourceMap": true,
     "outDir": "dist",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "strict": true,
+    "esModuleInterop": true
   },
   "exclude": ["**/*.test.ts"]
 }
