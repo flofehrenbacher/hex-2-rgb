@@ -11,7 +11,7 @@ npm install @help-me/hex-2-rgb
 ### Usage
 
 ```
-import { hex2rgb } from 'help-me/hex-2-rgb'
+import { hex2rgb } from '@help-me/hex-2-rgb'
 
 const rgb = hex2rgb('#000000')
 console.log(rgb) // rgba(0, 0, 0)
