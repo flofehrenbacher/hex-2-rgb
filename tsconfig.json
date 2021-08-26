@@ -3,7 +3,7 @@
     "declaration": true,
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
-    "target": "es5",
+    "target": "esnext",
     "sourceMap": true,
     "outDir": "dist",
     "skipLibCheck": true,
