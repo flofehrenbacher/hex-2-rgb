@@ -2,7 +2,7 @@
   "compilerOptions": {
     "declaration": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "umd",
+    "module": "commonjs",
     "target": "es5",
     "sourceMap": true,
     "outDir": "dist",
