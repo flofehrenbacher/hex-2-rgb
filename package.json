@@ -10,7 +10,11 @@
   ],
   "author": "Florian Fehrenbacher",
   "license": "ISC",
-  "name": "hex-2-rgb",
+  "name": "@help-me/hex-2-rgb",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flofehrenbacher/hex-2-rgb.git"
+  },
   "version": "1.0.0",
   "description": "lightweight typescript function to convert hexes of format #rrggbb to rgb(x,y,z) or rgba(x,y,z,a)",
   "main": "dist/index.js",

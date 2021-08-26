@@ -1,11 +1,11 @@
-# hex-2-rgb
+# hex-2-rgba
 
-Super lightweight typescript function to convert hexes of format `#RRGGBB` to rgb of value `rgb(x,y,z)` or `rgba(x,y,z,a)`.
+Super lightweight typescript helper function to convert hexes of format `#RRGGBB` to rgb of value `rgb(x,y,z)` or `rgba(x,y,z,a)`.
 
 ## Installation
 
 ```
-npm install hex-2-rgb
+npm install @help-me/hex-2-rgba
 ```
 
 ### Usage
