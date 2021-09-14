@@ -10,7 +10,7 @@
   ],
   "author": "Florian Fehrenbacher",
   "license": "ISC",
-  "name": "@help-me/hex-2-rgb",
+  "name": "@zero-deps/hex-2-rgb",
   "repository": {
     "type": "git",
     "url": "https://github.com/flofehrenbacher/hex-2-rgb.git"

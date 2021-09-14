@@ -5,13 +5,13 @@ Super lightweight typescript helper function to convert hexes of format `#RRGGBB
 ## Installation
 
 ```
-npm install @help-me/hex-2-rgb
+npm install @zero-deps/hex-2-rgb
 ```
 
 ### Usage
 
 ```
-import { hex2rgb } from '@help-me/hex-2-rgb'
+import { hex2rgb } from '@zero-deps/hex-2-rgb'
 
 const rgb = hex2rgb('#000000')
 console.log(rgb) // rgba(0, 0, 0)
