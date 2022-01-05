@@ -36,7 +36,7 @@
   "devDependencies": {
     "@size-limit/preset-small-lib": "7.0.5",
     "@types/jest": "27.4.0",
-    "jest": "27.4.5",
+    "jest": "27.4.6",
     "prettier": "2.5.1",
     "rimraf": "3.0.2",
     "size-limit": "7.0.5",
