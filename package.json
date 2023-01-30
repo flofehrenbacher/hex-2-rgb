@@ -48,6 +48,6 @@
     "ts-jest": "29.0.5",
     "size-limit": "8.1.1",
     "tsup": "6.5.0",
-    "typescript": "4.9.4"
+    "typescript": "4.9.5"
   }
 }
