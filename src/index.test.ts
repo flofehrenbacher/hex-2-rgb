@@ -5,7 +5,7 @@ describe('hex2rgb should', () => {
   const blackHex = '#000000'
   const redHex = '#FF0000'
 
-  it('convert hex examles correctly', () => {
+  it('convert hex examples correctly', () => {
     expect(hex2rgb(whiteHex)).toEqual('rgb(255, 255, 255)')
     expect(hex2rgb(blackHex)).toEqual('rgb(0, 0, 0)')
     expect(hex2rgb(redHex)).toEqual('rgb(255, 0, 0)')
