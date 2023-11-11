@@ -24,7 +24,7 @@
     "test": "jest",
     "type-check": "tsc --noEmit",
     "prebuild": "rm -rf dist",
-    "build": "tsup src/index.ts --format esm,cjs",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
     "size": "size-limit",
     "prepublishOnly": "run-s build size"
   },
