@@ -43,7 +43,7 @@
     "@swc/core": "1.13.20",
     "@types/jest": "29.5.14",
     "jest": "29.7.0",
-    "npm-run-all2": "7.0.2",
+    "npm-run-all2": "8.0.4",
     "prettier": "3.6.2",
     "ts-jest": "29.4.5",
     "size-limit": "11.2.0",
