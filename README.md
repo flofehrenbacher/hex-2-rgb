@@ -28,7 +28,7 @@ console.log(rgba) // rgba(255, 255, 255, 0.5)
 
 ### Size limit
 
-**Smaller** than 500 bytes (commonjs, minified and gzipped).
-**Smaller** than 150 bytes (EMS, minified and gzipped).
+**Smaller** than 170 bytes (commonjs, minified and gzipped).
+**Smaller** than 120 bytes (EMS, minified and gzipped).
 
 [Size Limit](https://github.com/ai/size-limit) controls the size.

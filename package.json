@@ -1,4 +1,7 @@
 {
+  "name": "@zero-deps/hex-2-rgb",
+  "version": "0.0.0-semantically-released",
+  "description": "lightweight typed function to convert hexes of format #rrggbb to rgb(x,y,z) or rgba(x,y,z,a) without runtime dependencies",
   "keywords": [
     "rgb",
     "rgba",
@@ -8,49 +11,53 @@
     "convert",
     "typescript"
   ],
-  "author": "Florian Fehrenbacher",
-  "license": "ISC",
-  "name": "@zero-deps/hex-2-rgb",
   "repository": {
     "type": "git",
     "url": "https://github.com/flofehrenbacher/hex-2-rgb.git"
   },
-  "version": "0.0.0-semantically-released",
-  "description": "lightweight typed function to convert hexes of format #rrggbb to rgb(x,y,z) or rgba(x,y,z,a) without runtime dependencies",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "license": "ISC",
+  "author": "Florian Fehrenbacher",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.cts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "test": "node --test",
-    "type-check": "tsc --noEmit",
     "prebuild": "rm -rf dist",
-    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "build": "tsdown",
+    "prepublishOnly": "npm run build && npm run size",
     "size": "size-limit",
-    "prepublishOnly": "npm run build && npm run size"
+    "test": "node --test",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "11.2.0",
+    "@types/node": "24.9.1",
+    "prettier": "3.6.2",
+    "size-limit": "11.2.0",
+    "tsdown": "0.15.9",
+    "typescript": "5.9.3"
+  },
+  "volta": {
+    "node": "24.10.0"
   },
   "size-limit": [
     {
-      "limit": "400 B",
+      "limit": "170 B",
       "path": "dist/index.cjs"
     },
     {
       "limit": "120 B",
       "path": "dist/index.js"
     }
-  ],
-  "devDependencies": {
-    "@size-limit/preset-small-lib": "11.2.0",
-    "@types/node": "24.9.1",
-    "prettier": "3.6.2",
-    "size-limit": "11.2.0",
-    "tsup": "8.5.0",
-    "typescript": "5.9.3"
-  },
-  "volta": {
-    "node": "24.10.0"
-  }
+  ]
 }
