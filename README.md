@@ -4,6 +4,10 @@
 
 Super lightweight typescript helper function to convert hexes of format `#RRGGBB` to rgb of value `rgb(x,y,z)` or `rgba(x,y,z,a)`.
 
+## Deployment
+
+This package is semantically released. For more information see [semantic-release](https://semantic-release.gitbook.io/semantic-release)
+
 ## Installation
 
 ```
