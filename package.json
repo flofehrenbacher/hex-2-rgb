@@ -44,6 +44,7 @@
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "11.2.0",
+    "@types/node": "24.9.1",
     "prettier": "3.6.2",
     "size-limit": "11.2.0",
     "tsup": "8.5.0",
