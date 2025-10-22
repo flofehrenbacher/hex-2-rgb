@@ -5,6 +5,8 @@
     "sourceMap": true,
     "skipLibCheck": true,
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true
   },
 }

@@ -16,38 +16,37 @@
     "url": "https://github.com/flofehrenbacher/hex-2-rgb.git"
   },
   "version": "2.2.1",
-  "description": "lightweight typescript function to convert hexes of format #rrggbb to rgb(x,y,z) or rgba(x,y,z,a)",
+  "description": "lightweight typed function to convert hexes of format #rrggbb to rgb(x,y,z) or rgba(x,y,z,a) without runtime dependencies",
   "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
-    "test": "jest",
+    "test": "node --test",
     "type-check": "tsc --noEmit",
     "prebuild": "rm -rf dist",
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "size": "size-limit",
-    "prepublishOnly": "run-s build size"
+    "prepublishOnly": "npm run build && npm run size"
   },
   "size-limit": [
     {
-      "limit": "500 B",
-      "path": "dist/index.js"
+      "limit": "400 B",
+      "path": "dist/index.cjs"
     },
     {
-      "limit": "150 B",
-      "path": "dist/index.mjs"
+      "limit": "120 B",
+      "path": "dist/index.js"
     }
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "11.2.0",
-    "@swc/core": "1.13.20",
-    "@types/jest": "29.5.14",
-    "jest": "29.7.0",
-    "npm-run-all2": "8.0.4",
     "prettier": "3.6.2",
-    "ts-jest": "29.4.5",
     "size-limit": "11.2.0",
     "tsup": "8.5.0",
     "typescript": "5.9.3"
+  },
+  "volta": {
+    "node": "24.10.0"
   }
 }
