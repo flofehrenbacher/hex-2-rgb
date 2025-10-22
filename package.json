@@ -15,12 +15,15 @@
     "type": "git",
     "url": "https://github.com/flofehrenbacher/hex-2-rgb.git"
   },
-  "version": "2.2.1",
+  "version": "0.0.0-semantically-released",
   "description": "lightweight typed function to convert hexes of format #rrggbb to rgb(x,y,z) or rgba(x,y,z,a) without runtime dependencies",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "node --test",
     "type-check": "tsc --noEmit",
