@@ -44,7 +44,7 @@
     "@types/node": "24.10.4",
     "prettier": "3.7.4",
     "size-limit": "11.2.0",
-    "tsdown": "0.17.4",
+    "tsdown": "0.18.0",
     "typescript": "5.9.3"
   },
   "volta": {
