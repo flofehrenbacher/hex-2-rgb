@@ -42,7 +42,7 @@
   "devDependencies": {
     "@size-limit/preset-small-lib": "11.2.0",
     "@types/node": "24.12.2",
-    "prettier": "3.8.1",
+    "prettier": "3.8.2",
     "size-limit": "11.2.0",
     "tsdown": "0.21.7",
     "typescript": "5.9.3"
