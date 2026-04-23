@@ -40,7 +40,7 @@
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
-    "@size-limit/preset-small-lib": "11.2.0",
+    "@size-limit/preset-small-lib": "12.1.0",
     "@types/node": "24.12.2",
     "prettier": "3.8.3",
     "size-limit": "11.2.0",
