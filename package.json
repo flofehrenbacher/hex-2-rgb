@@ -45,7 +45,7 @@
     "prettier": "3.9.6",
     "size-limit": "11.2.0",
     "tsdown": "0.22.14",
-    "typescript": "5.9.3"
+    "typescript": "7.0.2"
   },
   "volta": {
     "node": "24.18.0"
